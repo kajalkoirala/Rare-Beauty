@@ -8,7 +8,6 @@
 .hello{
     width:100%;
     height: 100vh;
-    background-image:linear-gradient(skyblue, white);
     position: relative;
     padding:0.5%;
     display:flex;
@@ -59,7 +58,7 @@ nav ul li a.active{
 
 .content h1{
     font-size: 100px;
-    color: white;
+    color: rgb(247, 236, 243);
     font-weight: 600;
     transition: 0.5s;
 }
@@ -67,14 +66,16 @@ nav ul li a.active{
 .content h1 :hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
+    opacity: 0.5;
+
 }
 
 .content a{
     text-decoration: none;
     display: inline-block;
-    color:#fff;
+    color:#f34fca;
     font-size:25px;
-    border: 2px solid #fff;
+    border: 2px solid #e09cbc;
     padding: 10px 30px;
     border-radius: 50px;
     margin-top: 20px;

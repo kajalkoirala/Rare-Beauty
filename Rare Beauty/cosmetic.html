@@ -7,11 +7,14 @@
     <title>Rare Beauty</title>
     <link rel="stylesheet" href="cosmetic.css"/>
 </head>
-<body>
+<body onload="enableAutoplay()">
+   
     <div class="hello">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src ="images/video.mp4.mp4" type="video/mp4">
+        <video id="myVideo"  autoplay="true" muted  loop class="back-video">
+      
+            <source src="images/rarebeauty.mp4" type="video/mp4">
         </video>
+       
         <nav>
             <img src="images/logo.png" alt="logo" class="logo"/>
             <ul>
@@ -27,6 +30,21 @@
         </div>
 
     </div>
+    <script>
+        var vid = document.getElementById("myVideo");
+function enableAutoplay() { 
+  vid.muted = false;
+  vid.load();
+}
+
+vid.addEventListener('ended', function() {
+            // Restart the video when it ends
+            this.currentTime = 0;
+            this.play();
+        }, false);
+
+    </script>
 
 </body>
 </html>
+
